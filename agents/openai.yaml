@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tang-writing"
+  short_description: "按唐式方法写公众号、朋友圈、评论、读书笔记与中文长短内容"
+  default_prompt: "使用 $tang-writing，把这份真实材料写成有钩子、有嘴替感、能推动行动的中文内容。"
