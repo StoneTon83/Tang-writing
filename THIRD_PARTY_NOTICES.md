@@ -3,7 +3,7 @@
 Tang-writing incorporates and adapts portions of the Human Writing Skill:
 
 - Source: https://github.com/KKKKhazix/human-writing
-- Reviewed upstream commit: `22d20b672680e4c1a34e75aec550ff48d622ca59`
+- Reviewed upstream commit: `4fda173f3fef7fb808f3eba991eeb2528ea4b189` (`human-writing` 1.1.0)
 
 Those portions are used under the MIT License reproduced below.
 
