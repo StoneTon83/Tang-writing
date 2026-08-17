@@ -1,4 +1,4 @@
 interface:
-  display_name: "Tang-writing"
+  display_name: "Tang Writing"
   short_description: "按唐式方法研究、写作和改稿，重事实、判断、认知推进与自然中文"
-  default_prompt: "使用 $tang-writing，先守住事实和证据边界，再形成可负责的判断；按当前任务选择叙事、分析或认知推进方式，用完整自然的中文段落组织材料，让读者获得新的理解、判断方法或行动。"
+  default_prompt: "使用 $tang-writing，先守住事实和证据边界，再形成可负责的判断；按当前任务选择叙事、分析或认知推进方式，按当前文体用自然中文组织材料，让读者获得新的理解、判断方法或行动。"
