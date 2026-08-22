@@ -101,4 +101,4 @@
 
 ## 七、当前状态
 
-3.1 已同步到本机安装目录，并通过安装层复验。Pull Request #2 已转为 Ready 并以 rebase merge 进入 `main`；GitHub 默认分支与本机安装层均为 3.1。远端功能分支 `codex/tang-writing-3.1` 暂时保留用于发布核对，没有执行分支删除或直接推送改写 `main`。
+3.1 已同步到本机安装目录，并通过安装层复验。Pull Request #2 已转为 Ready 并以 rebase merge 进入 `main`；GitHub 默认分支与本机安装层均为 3.1，二者是现役发布面。远端功能分支只承担发布过程，不作为现役入口；确认补丁等价且没有唯一文件后按清场流程删除。`main` 的内容更新均通过 Pull Request 合并，没有直接推送改写 `main`。
