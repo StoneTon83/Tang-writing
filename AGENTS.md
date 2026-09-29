@@ -1,32 +1,21 @@
-# Tang-writing 项目规则
+# Tang Writing System 仓库规则
 
-## 项目定位
+本仓库维护 Tang Writing System 4.0。现役运行行为以 `SKILL.md` 和它直接路由的参考为准；`references/system-source.md` 是定稿依据，按核对需求读取。
 
-本仓库维护 `tang-writing` 中文非虚构写作 Skill。`SKILL.md` 是核心运行入口，`references/` 承担按需方法，`scripts/` 提供确定性检查，`tests/` 保存回归证据。
+## 文件归属
 
-## 权威边界
+- 运行文件：`SKILL.md`、`agents/openai.yaml`、`references/*.md`。
+- `README.md` 说明使用范围与版本。
+- `RELEASE_4.0.md` 记录当前替换范围、验证与边界，不充当第二套运行指令。
+- `THIRD_PARTY_NOTICES.md` 保留历史第三方来源与许可。
+- 本机安装目录是发布镜像；使用已确认制作源更新仓库，保护安装副本的用户改动。
 
-- 现役写作行为以 `SKILL.md` 与它直接路由的 references 为准。
-- `UPGRADE_AUDIT_<version>.md` 分别记录各版本的来源、取舍与验证；最新版本的审计记录当前发布状态，不复制成第二份运行规则。
-- `tests/` 证明规则能否保护既有好稿、收窄过强判断并完成端到端写作；测试结论必须保留真实强度。
-- `THIRD_PARTY_NOTICES.md` 是第三方来源与许可证记录。
-- 本机安装目录是发布镜像，不是仓库真身；不要从安装副本反向覆盖仓库。
+## 修改与验证
 
-## 修改约定
+只修改当前任务所需内容，保留用户改动；先功能分支，再通过PR合并。外部写入、删除和发布依照当前会话授权。
 
-- 只修改当前任务需要的文件，保护已有用户改动。
-- 规则细节只放一处；核心调度留在 `SKILL.md`，详细方法下沉到 references。
-- 不把审计、tests、工作稿或研究克隆同步进本机安装目录。
-- 版本状态变化时同步检查 Skill 标题、升级审计、回归结论、GitHub `main` 与 PR 状态，避免多个“当前答案”。
-- 删除、重命名、推送、合并和分支清理遵循当前会话的授权与确认规则。
+新版本运行当前Codex `skill-creator` 的官方 `quick_validate.py`；依赖若缺失，放任务隔离目录并记录版本，不修改系统环境。检查本地引用、配置格式、运行文件一致性，并运行 `git diff --check`。若环境限制导致检查无法完成，准确报告缺口。
 
-## 验证
+行为变化应使用真实形式的任务检查事实边界、文体交付及反馈归因；局部改动按影响选择检查，不为通过增加镜像实现的测试。3.x的 `check_tang_prose.py` 已随旧系统退役，不再作为4.0验收工具。
 
-修改后至少运行：
-
-1. 当前 Codex `skill-creator` 提供的官方 `quick_validate.py`，目标为仓库根目录。
-2. `python scripts/check_tang_prose.py --self-test`。
-3. `git diff --check`。
-4. 检查 `SKILL.md` 及 references 中的本地引用全部存在。
-
-发布到本机后，逐项比较仓库与安装目录中的 `SKILL.md`、`agents/`、`references/`、`scripts/` 和 `THIRD_PARTY_NOTICES.md`；换行差异不算内容差异。
+安装时只同步9个运行文件。区分文件校验、skill发现、实际调用、平台发布和真实传播效果，不互相替代。
