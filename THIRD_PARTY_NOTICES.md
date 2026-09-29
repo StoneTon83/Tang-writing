@@ -1,6 +1,6 @@
 # Third-Party Notices
 
-Tang-writing incorporates and adapts portions of the Human Writing Skill:
+Historical Tang-writing 3.x releases incorporated and adapted portions of the Human Writing Skill. Tang Writing System 4.0 was rebuilt from the user-confirmed system document; the following notice is retained for historical provenance and prior versions:
 
 - Source: https://github.com/KKKKhazix/human-writing
 - Reviewed upstream commit: `4fda173f3fef7fb808f3eba991eeb2528ea4b189` (`human-writing` 1.1.0)

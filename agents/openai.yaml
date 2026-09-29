@@ -1,4 +1,6 @@
 interface:
-  display_name: "Tang Writing"
-  short_description: "按唐式方法研究、写作和改稿，守事实与认知质量，增强阅读、传播与商业承接"
-  default_prompt: "使用 $tang-writing，先守住事实和证据边界，再形成可负责的判断；公开内容按增长、立信或转化主任务设计阅读与传播推进，用完整段落交付价值，并按真实供给自然承接商业需求。"
+  display_name: "Tang Writing System 4.0"
+  short_description: "以真实素材贯通选题、认知文、叙事文、朋友圈、传播设计与数据复盘"
+  default_prompt: "使用 $tang-writing-system，依据我的素材和目标读者，选择合适文体并完成写作或改稿。"
+policy:
+  allow_implicit_invocation: true
