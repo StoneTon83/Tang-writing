@@ -1,23 +1,13 @@
 # Tang Writing System 仓库规则
 
-本仓库维护 Tang Writing System 4.0。现役运行行为以 `SKILL.md` 和它直接路由的参考为准；`references/system-source.md` 是定稿依据，按核对需求读取。
+本仓库维护Tang Writing System 4.0，当前修订日期为2026-10-01。现役运行指令以SKILL.md及其直接路由的参考为准，references/system-source.md逐字保存17章定稿依据，仅核对来源或修订系统时读。
 
-## 文件归属
+运行文件为SKILL.md、agents/openai.yaml，以及references中的topics、reality-and-research、editing、moments、system-source，共7个。README介绍使用与范围；RELEASE_4.0记录替换与验证；THIRD_PARTY_NOTICES保留历史许可。安装目录是镜像，不能丢失用户独有修改。
 
-- 运行文件：`SKILL.md`、`agents/openai.yaml`、`references/*.md`。
-- `README.md` 说明使用范围与版本。
-- `RELEASE_4.0.md` 记录当前替换范围、验证与边界，不充当第二套运行指令。
-- `THIRD_PARTY_NOTICES.md` 保留历史第三方来源与许可。
-- 本机安装目录是发布镜像；使用已确认制作源更新仓库，保护安装副本的用户改动。
+只改当前任务所需内容；先功能分支，再通过PR合并，外部写入与删除服从当前会话授权。版本号维持4.0，以修订日期区分，不把历史成品混作现役。
 
-## 修改与验证
+行为约束为选题先行、默认共鸣、每篇唯一发动机。研究与故事可支撑主要回报，不能恢复多发动机矩阵或P0—P10；运营复盘与增长实验不并回写作主体。朋友圈轻量交付，不调用长文全部流程。
 
-只修改当前任务所需内容，保留用户改动；先功能分支，再通过PR合并。外部写入、删除和发布依照当前会话授权。
+更新时运行当前skill-creator官方quick_validate.py，检查YAML、本地引用、定稿原文一致、7个运行文件与安装及压缩包一致，运行git diff --check。复用任务隔离依赖，不改系统环境。来源原文保留原始Markdown，只对该文件声明行末空白并另核对逐字与双空格；其他文件按默认空白门禁。
 
-新版本运行当前Codex `skill-creator` 的官方 `quick_validate.py`；依赖若缺失，放任务隔离目录并记录版本，不修改系统环境。检查本地引用、配置格式、运行文件一致性，并运行 `git diff --check`。若环境限制导致检查无法完成，准确报告缺口。
-
-行为变化应使用真实形式的任务检查事实边界、文体交付及反馈归因；局部改动按影响选择检查，不为通过增加镜像实现的测试。3.x的 `check_tang_prose.py` 已随旧系统退役，不再作为4.0验收工具。
-
-安装时只同步10个运行文件，包括按需读取的内容发动机矩阵；版本号维持4.0，以修订日期区分迭代。区分文件校验、skill发现、实际调用、平台发布和真实传播效果，不互相替代。
-
-来源原文保留Markdown双空格换行，仅 `references/system-source.md` 的行末空白由 `.gitattributes` 声明；同时核对原文逐字一致，并检查行末空白只允许这类双空格。其他文件继续按默认Git空白门禁检查。
+行为变化按影响做实际形式任务检查，并读回产物；区分结构校验、实际试用、skill发现与实际传播。无法验证就记录缺口，不降低标准制造通过。用户授权范围不因调用skill扩大。

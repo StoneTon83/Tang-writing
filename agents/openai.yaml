@@ -1,6 +1,6 @@
 interface:
   display_name: "Tang Writing System 4.0"
-  short_description: "以真实素材贯通选题、认知文、叙事文、朋友圈、传播设计与数据复盘"
-  default_prompt: "使用 $tang-writing-system，依据我的素材和目标读者，选择合适文体并完成写作或改稿。"
+  short_description: "先选值得写的题，用一个发动机写透，保留Tang的共鸣、锋芒与人味"
+  default_prompt: "使用 $tang-writing-system，依据我的真实素材先选值得写的题，再用一个发动机完成有Tang声音的文章。"
 policy:
   allow_implicit_invocation: true
