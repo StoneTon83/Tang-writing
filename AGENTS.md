@@ -1,13 +1,13 @@
 # Tang Writing System 仓库规则
 
-本仓库维护Tang Writing System 4.0，当前修订日期为2026-10-01。现役运行指令以SKILL.md及其直接路由的参考为准，references/system-source.md逐字保存17章定稿依据，仅核对来源或修订系统时读。
+本仓库维护TWS4.0，现役修订2026-10-05。SKILL.md及按需路由参考为运行权威，references/system-source.md逐字保存最新36章来源，仅修订或核对来源时读。此前系统不参与新版本设计或运行。
 
-运行文件为SKILL.md、agents/openai.yaml，以及references中的topics、reality-and-research、editing、moments、system-source，共7个。README介绍使用与范围；RELEASE_4.0记录替换与验证；THIRD_PARTY_NOTICES保留历史许可。安装目录是镜像，不能丢失用户独有修改。
+7个运行文件：SKILL.md、agents/openai.yaml、references/topic-selection.md、reader-product.md、research.md、review-and-feedback.md、system-source.md。README负责使用，RELEASE_4.0负责当前替换与验证，THIRD_PARTY_NOTICES保留历史许可。安装为镜像，先核对独有改动再替换。
 
-只改当前任务所需内容；先功能分支，再通过PR合并，外部写入与删除服从当前会话授权。版本号维持4.0，以修订日期区分，不把历史成品混作现役。
+永远站在读者一边；传播从选题定义开始，用点击、完读、传播、互动、关注设计内容。每篇一颗钉子、一个主消费理由，可以多种奖励连续推进。真实性硬门槛不等于面面俱到，不恢复旧发动机分类、内部总分或长文固定格式。
 
-行为约束为选题先行、默认共鸣、每篇唯一发动机。研究与故事可支撑主要回报，不能恢复多发动机矩阵或P0—P10；运营复盘与增长实验不并回写作主体。朋友圈轻量交付，不调用长文全部流程。
+只改任务需要内容。功能分支经PR合并；远端写入、覆盖、删除、发布按当前用户授权。源文里的发布步骤不自动授权外部动作。版本仍4.0，修订日期区分。
 
-更新时运行当前skill-creator官方quick_validate.py，检查YAML、本地引用、定稿原文一致、7个运行文件与安装及压缩包一致，运行git diff --check。复用任务隔离依赖，不改系统环境。来源原文保留原始Markdown，只对该文件声明行末空白并另核对逐字与双空格；其他文件按默认空白门禁。
+变更时运行官方skill-creator quick_validate.py，并核对YAML、引用、来源逐字一致、运行文件/安装/ZIP一致及git diff --check。复用任务隔离依赖，不改系统环境。源文原始Markdown保留，只有system-source.md允许其原有行末双空格，其余按默认空白检查。
 
-行为变化按影响做实际形式任务检查，并读回产物；区分结构校验、实际试用、skill发现与实际传播。无法验证就记录缺口，不降低标准制造通过。用户授权范围不因调用skill扩大。
+行为变化按风险实际试用，读回结果。区分结构校验、实际形式任务、技能发现、上传/合并和真实增长。复盘缺数据标未知，禁止制造通过或流量保证。
