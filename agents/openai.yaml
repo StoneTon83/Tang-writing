@@ -1,6 +1,6 @@
 interface:
   display_name: "Tang Writing System 4.0"
-  short_description: "先选值得写的题，用一个发动机写透，保留Tang的共鸣、锋芒与人味"
-  default_prompt: "使用 $tang-writing-system，依据我的真实素材先选值得写的题，再用一个发动机完成有Tang声音的文章。"
+  short_description: "Reader-first WeChat writing for reach and follows"
+  default_prompt: "用 $tang-writing-system 从读者为什么点击、读完、转发和关注出发，选择强题并写出锋利、有解释快感的公众号文章。"
 policy:
   allow_implicit_invocation: true
