@@ -1,6 +1,6 @@
 interface:
-  display_name: "Tang Writing System 4.0"
-  short_description: "Reader-first WeChat writing for reach and follows"
-  default_prompt: "用 $tang-writing-system 从读者为什么点击、读完、转发和关注出发，选择强题并写出锋利、有解释快感的公众号文章。"
+  display_name: "Tang Writing System 4.1"
+  short_description: "从读者切身利害进入，以研究与判断支撑点击、阅读和传播的公众号写作"
+  default_prompt: "用 $tang-writing-system 从具体读者的处境和利害出发，写出值得点开、读下去和转发，并有可靠现实判断的公众号文章。"
 policy:
   allow_implicit_invocation: true
